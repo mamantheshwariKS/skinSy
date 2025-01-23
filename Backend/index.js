@@ -3,7 +3,7 @@ const app = express()
 const dotenv = require('dotenv')
 dotenv.config()
 const PORT = process.env.PORT
-const database = require('./src/utils/database')
+const database = require('./utils/database')
 const DB = process.env.DB
 app.get('/', function (req, res) {
   res.send('Hello World')
