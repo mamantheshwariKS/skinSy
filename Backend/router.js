@@ -1,5 +1,5 @@
 const express = require('express')
-const router = express();
+const initRouter = express();
 
 
 
@@ -18,4 +18,4 @@ initRouter.use('/email', emailRoute)
 
 
 
-module.exports - router
+module.exports = initRouter

@@ -1,18 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { createUser, 
-  userLogin, 
-  fetchSingleUser, 
-  forgotPassword, 
-  resetPassword, 
-  fetchAllUsers, 
-  updateUser, 
-  deleteUser,
-  verifyOTP,
-  resendOTP,
-  getAllAgents
- } = require('../controllers/userController');
-const {  logoutSession, verifySessionToken } = require('../controllers/sessionController')
+const { createUser, userLogin, fetchSingleUser, forgotPassword, resetPassword, fetchAllUsers, updateUser, deleteUser, verifyOTP, resendOTP, getAllAgents } = require('../controllers/userController');
+
+const { logoutSession, verifySessionToken } = require('../controllers/sessionController')
 // const checkRole = require('../middlewares/checkRole');
 const checkToken = require('../middlewares/checkToken')
 const isAdmin = require('../middlewares/isAdmin')
